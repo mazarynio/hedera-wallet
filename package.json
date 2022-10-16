@@ -1,0 +1,8 @@
+{
+    "name": "hedera-wallet",
+    "version": "0.1.0",
+    "author": "Mazaryn Team",
+    "dependencies": {
+      "@hashgraph/sdk": "2.18.3"
+    }
+}
