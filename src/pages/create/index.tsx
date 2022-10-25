@@ -4,7 +4,7 @@ import { CreateOptionType, CreateOptions } from "../../domain/CreateOptions";
 
 import './Create.css';
 
-const index = ({title, desc}: OptionCardProps) => {
+const index = () => {
 
   const handleClick = () => {
     const options = Array.from(CreateOptions.values()).filter(
@@ -21,11 +21,13 @@ const index = ({title, desc}: OptionCardProps) => {
     <div className='createpage'>
         <h1 className='heading-1'>Create a New Wallet</h1>
         <div>
-            <OptionCard 
-              title={title} 
-              desc={desc}      
-
-            />
+          {Array.from(CreateOptions.values()).filter((option) => option.supported).map((option1) => (
+             <OptionCard 
+              title={option1.title}
+              desc={option1.description}
+             />
+          ))}
+            
         </div>
     </div>
   )
