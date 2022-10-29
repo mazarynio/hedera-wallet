@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@hashgraph/sdk": "^2.18.4",
+    "@hashgraph/sdk": "^2.18.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -17,7 +17,8 @@
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "typescript": "^4.8.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@hieudoanm/pino": "0.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -44,6 +45,9 @@
     ]
   },
   "devDependencies": {
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "typescript": "4.8.4",
+    "webpack": "5.74.0",
+    "webpack-cli": "4.10.0"
   }
 }
