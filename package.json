@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@hashgraph/sdk": "^2.18.5",
+    "@hieudoanm/pino": "0.0.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,13 +13,16 @@
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "big-number": "^2.0.0",
+    "i18next": "^22.0.4",
+    "i18next-browser-languagedetector": "^7.0.0",
+    "i18next-http-backend": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.0.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "typescript": "^4.8.4",
-    "web-vitals": "^2.1.4",
-    "@hieudoanm/pino": "0.0.1"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

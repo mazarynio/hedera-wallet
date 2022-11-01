@@ -1,4 +1,3 @@
-import { Routes, Route, Link } from "react-router-dom";
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
@@ -22,24 +21,11 @@ i18n
     react: {useSuspense: false}
   });
 
+const I18Next = () => {
 
-export type OptionCardProps = {
-    title: String
-    desc: String
+    const { t } = useTranslation();
+
+    return <h2>{t('Create.title')}</h2>;
 }
-
-const OptionCard = ({title, desc}: OptionCardProps) => {
-  const { t } = useTranslation();
-  return (
-    <div>
-        <div>
-            <span>{t(`${title}`)}</span>
-        </div>
-        <div>
-          {t(`${desc}`)}
-        </div>
-    </div>
-  )
-}
-
-export default OptionCard
+  
+export default I18Next

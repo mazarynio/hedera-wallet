@@ -1,5 +1,5 @@
 import { AccountBalance, AccountBalanceQuery } from '@hashgraph/sdk';
-import logger from '@hieudoanm/pino';
+// import logger from '@hieudoanm/pino';
 import getClient from '../../client';
 
 export const queryAccountBalance = async (
@@ -12,11 +12,11 @@ export const queryAccountBalance = async (
     .setAccountId(accountId)
     .execute(client);
 
-  logger.info(
-    `${accountId}: ${accountBalance.tokens?._map.get(
-      tokenId
-    )} units of token ID ${tokenId}`
-  );
+  // logger.info(
+  //   `${accountId}: ${accountBalance.tokens?._map.get(
+  //     tokenId
+  //   )} units of token ID ${tokenId}`
+  // );
 
   return accountBalance;
 };
