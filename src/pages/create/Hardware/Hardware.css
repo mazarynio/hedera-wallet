@@ -1,11 +1,12 @@
-.createpage {
+.hardware {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.createpage .heading-1 {
+.hardware .heading-1 {
     color: black;
     text-align: left;
 }
+

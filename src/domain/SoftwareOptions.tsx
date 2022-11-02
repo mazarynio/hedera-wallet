@@ -10,6 +10,7 @@ export interface SoftwareAttributes {
     description: string;
     value: SoftwareOption;
     route: string;
+    id: number;
 }
 
 
@@ -19,6 +20,7 @@ export const SoftwareOptions: Map<SoftwareOption, SoftwareAttributes> = new Map(
     [
       SoftwareOption.Keystore,
       {
+        id: 1,
         supported: true,
         title: "Keystore.title",
         description: "Keystore.description",
@@ -29,6 +31,7 @@ export const SoftwareOptions: Map<SoftwareOption, SoftwareAttributes> = new Map(
     [
       SoftwareOption.Mnemonic,
       {
+        id: 2,
         supported: true,
         title: "Mnemonic.title",
         description: "Mnemonic.description",
@@ -39,6 +42,7 @@ export const SoftwareOptions: Map<SoftwareOption, SoftwareAttributes> = new Map(
     [
       SoftwareOption.Key,
       {
+        id: 3,
         supported: true,
         title: "Key.title",
         description: "Key.description",

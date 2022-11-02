@@ -1,0 +1,32 @@
+.wrap-card a {
+    display: block;
+    background: #fff;
+    width: max-content;
+    padding: 12px 24px;
+    border-radius: 4px;
+    margin: 20px 0;
+    box-shadow: 1px 3px 3px 3px #E8E8E8;
+    transition: box-shadow 150ms cubic-bezier(.4,0,.2,1);
+    text-decoration: none;
+    color: black;
+}
+
+.wrap-card a:hover {
+    box-shadow: 3px 5px 5px 5px #E8E8E8;
+}
+
+.wrap-card h3,
+.wrap-card p {
+   max-width: 520px;
+}
+
+.wrap-card h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.wrap-card p {
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 300;
+}

@@ -1,19 +1,19 @@
-import OptionCard, { OptionCardProps } from "../../common/base/OptionCard";
-import { CreateOptionType, CreateOptions } from "../../domain/CreateOptions";
+import OptionCard from "../../common/base/OptionCard";
+import { CreateOptions } from "../../domain/CreateOptions";
 
 import './Create.css';
 
 const index = () => {
 
-  const handleClick = () => {
-    const options = Array.from(CreateOptions.values()).filter(
-      (option) => option?.supported
-    );
-    return {
-      options,
-      CreateOptionType
-    }
-  }
+  // const handleClick = () => {
+  //   const options = Array.from(CreateOptions.values()).filter(
+  //     (option) => option?.supported
+  //   );
+  //   return {
+  //     options,
+  //     CreateOptionType
+  //   }
+  // }
 
   return (
     <div className='createpage'>
@@ -24,6 +24,7 @@ const index = () => {
               key={option1.id}
               title={option1.title}
               desc={option1.description}
+              route={option1.route}
              />
           ))}
             

@@ -13,6 +13,7 @@ export interface HardwareAttributes {
     description: string;
     value: HardwareOption;
     route: string;
+    id: number;
 }
 
 
@@ -22,6 +23,7 @@ export const HardwareOptions: Map<HardwareOption, HardwareAttributes> = new Map(
     [
       HardwareOption.Ledger,
       {
+        id: 1,
         supported: true,
         title: "Ledger.title",
         description: "Ledger.description",
@@ -32,6 +34,7 @@ export const HardwareOptions: Map<HardwareOption, HardwareAttributes> = new Map(
     [
       HardwareOption.Finney,
       {
+        id: 2,
         supported: false,
         title: "Finney.title",
         description: "Finney.description",
@@ -42,6 +45,7 @@ export const HardwareOptions: Map<HardwareOption, HardwareAttributes> = new Map(
     [
       HardwareOption.Bitbox,
       {
+        id: 3,
         supported: false,
         title: "Bitbox.title",
         description: "Bitbox.description",
@@ -52,6 +56,7 @@ export const HardwareOptions: Map<HardwareOption, HardwareAttributes> = new Map(
     [
       HardwareOption.Trezor,
       {
+        id: 4,
         supported: false,
         title: "Trezor.title",
         description: "Trezor.description",
@@ -62,6 +67,7 @@ export const HardwareOptions: Map<HardwareOption, HardwareAttributes> = new Map(
     [
       HardwareOption.Secalot,
       {
+        id: 5,
         supported: false,
         title: "Secalot.title",
         description: "Secalot.description",
@@ -72,6 +78,7 @@ export const HardwareOptions: Map<HardwareOption, HardwareAttributes> = new Map(
     [
       HardwareOption.Keepkey,
       {
+        id: 6,
         supported: false,
         title: "KeepKey.title",
         description: "KeepKey.description",

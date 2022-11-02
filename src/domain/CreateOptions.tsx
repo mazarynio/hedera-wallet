@@ -27,7 +27,7 @@ export const CreateOptions: Map<CreateOptionType, CreateAttributes> = new Map([
             title: "Software.title",
             description: "Software.description",
             value: CreateOptionType.Software,
-            route: "create.software",
+            route: "software",
         },
     ],
     [
@@ -38,7 +38,7 @@ export const CreateOptions: Map<CreateOptionType, CreateAttributes> = new Map([
             title: "Hardware.title",
             description: "Hardware.description",
             value: CreateOptionType.Hardware,
-            route: "access.hardware", // same process as access
+            route: "hardware", // same process as access
         },
     ],
 ]);

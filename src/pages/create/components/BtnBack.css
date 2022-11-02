@@ -1,0 +1,24 @@
+.btn-back {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    opacity: 0.7;
+}
+
+.arrow-left {
+    height: 22px;
+    width:  22px;
+    fill: #0A2239;
+}
+
+.btn-back span {
+    font-size: 16px;
+    color: #0A2239;
+    margin-left: 10px;
+}

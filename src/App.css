@@ -1,5 +1,12 @@
+:root {
+  --main-gradient:  rgb(240,248,255);
+}
+
+
 body {
   margin: 0;
+  background: #449DD11A;
+  background: linear-gradient(90deg, #449DD11A 0%, #449DD11A 20%, #449DD11A  50%, #449DD11A 100%);
 }
 
 .App-header {

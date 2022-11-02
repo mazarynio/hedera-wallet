@@ -2,6 +2,8 @@ import { Routes, Route, Link } from "react-router-dom";
 import './App.css';
 import Create from "./pages/create";
 import Home from "./pages/home";
+import Software from "./pages/create/Software";
+import Hardware from "./pages/create/Hardware";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
       <Routes>
          <Route path="/" element={<Home />} />
          <Route path="/create" element={<Create  />} />
+         <Route path="/create/software" element={<Software />} />
+         <Route path="/create/hardware" element={<Hardware />} />
       </Routes>
       {/* <footer>
       <Link to="/privacy">
