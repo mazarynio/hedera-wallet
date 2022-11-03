@@ -1,7 +1,8 @@
 import OptionCard from "../../../common/base/OptionCard";
 import { HardwareOptions } from '../../../domain/HardwareOptions';
-import BtnBack from '../components/BtnBack';
+import BtnBack from '../../create/components/BtnBack';
 import './Hardware.css';
+
 
 const Hardware = () => {
   return (

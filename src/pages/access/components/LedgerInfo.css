@@ -1,0 +1,19 @@
+.wrap-ledger__info {
+    background-color: #F2E2BA66;
+    padding: 18px 30px;
+    list-style-position: outside;
+    border-radius: 4px;
+    max-width: 380px;
+}
+
+.wrap-ledger__info li {
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: -webkit-match-parent;
+}
+
+.wrap-ledger__info a {
+    color: black;
+}

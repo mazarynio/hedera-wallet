@@ -28,7 +28,7 @@ export const HardwareOptions: Map<HardwareOption, HardwareAttributes> = new Map(
         title: "Ledger.title",
         description: "Ledger.description",
         value: HardwareOption.Ledger,
-        route: "access.hardware.ledger",
+        route: "ledger",
       },
     ],
     [
@@ -39,7 +39,7 @@ export const HardwareOptions: Map<HardwareOption, HardwareAttributes> = new Map(
         title: "Finney.title",
         description: "Finney.description",
         value: HardwareOption.Finney,
-        route: "access.hardware.finney",
+        route: "finney",
       },
     ],
     [
@@ -50,7 +50,7 @@ export const HardwareOptions: Map<HardwareOption, HardwareAttributes> = new Map(
         title: "Bitbox.title",
         description: "Bitbox.description",
         value: HardwareOption.Bitbox,
-        route: "access.hardware.bitbox",
+        route: "bitbox",
       },
     ],
     [
@@ -61,7 +61,7 @@ export const HardwareOptions: Map<HardwareOption, HardwareAttributes> = new Map(
         title: "Trezor.title",
         description: "Trezor.description",
         value: HardwareOption.Trezor,
-        route: "access.hardware.trezor",
+        route: "trezor",
       },
     ],
     [
@@ -72,7 +72,7 @@ export const HardwareOptions: Map<HardwareOption, HardwareAttributes> = new Map(
         title: "Secalot.title",
         description: "Secalot.description",
         value: HardwareOption.Secalot,
-        route: "access.hardware.secalot",
+        route: "secalot",
       },
     ],
     [
@@ -83,7 +83,7 @@ export const HardwareOptions: Map<HardwareOption, HardwareAttributes> = new Map(
         title: "KeepKey.title",
         description: "KeepKey.description",
         value: HardwareOption.Keepkey,
-        route: "access.hardware.keepkey",
+        route: "keepkey",
       },
     ],
   ]

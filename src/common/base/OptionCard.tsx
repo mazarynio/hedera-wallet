@@ -33,6 +33,7 @@ export type OptionCardProps = {
 
 const OptionCard = ({title, desc, route}: OptionCardProps) => {
   const { t } = useTranslation();
+ 
   return (
     <div className='wrap-card'>
       <Link to={route ? route : ''}>

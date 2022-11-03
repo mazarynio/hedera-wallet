@@ -25,7 +25,7 @@ export const SoftwareOptions: Map<SoftwareOption, SoftwareAttributes> = new Map(
         title: "Keystore.title",
         description: "Keystore.description",
         value: SoftwareOption.Keystore,
-        route: "access.software.keystore",
+        route: "keystore",
       },
     ],
     [
@@ -36,7 +36,7 @@ export const SoftwareOptions: Map<SoftwareOption, SoftwareAttributes> = new Map(
         title: "Mnemonic.title",
         description: "Mnemonic.description",
         value: SoftwareOption.Mnemonic,
-        route: "access.software.mnemonic",
+        route: "mnemonic",
       },
     ],
     [
@@ -47,7 +47,7 @@ export const SoftwareOptions: Map<SoftwareOption, SoftwareAttributes> = new Map(
         title: "Key.title",
         description: "Key.description",
         value: SoftwareOption.Key,
-        route: "access.software.key",
+        route: "key",
       },
     ],
   ]
