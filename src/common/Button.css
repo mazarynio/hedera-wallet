@@ -1,0 +1,16 @@
+.btn-action {
+    background: #002D62;
+    color: white;
+    border-radius: 25px;
+    padding: 14px 22px;
+    font-size: 18px;
+    border-color: transparent;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 150ms ease-in-out;
+}
+
+.btn-action:hover {
+    opacity: 0.5;
+}

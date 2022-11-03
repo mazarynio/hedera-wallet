@@ -1,9 +1,10 @@
 .wrap-ledger__info {
-    background-color: #F2E2BA66;
+    background-color: #fff5a766;
     padding: 18px 30px;
     list-style-position: outside;
     border-radius: 4px;
     max-width: 380px;
+    margin-bottom: 30px;
 }
 
 .wrap-ledger__info li {
