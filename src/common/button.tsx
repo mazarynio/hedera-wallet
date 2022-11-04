@@ -1,9 +1,11 @@
+import React, { useState } from "react";
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 
 import './Button.css'
+
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -23,15 +25,27 @@ i18n
   });
 
 
-export type OptionCardProps = {
+export type ButtonProps = {
     title: String
     desc: String
     route?: string
 }
 
 
-export default function Button(){
+const Button: React.FC<{handleClick?: React.MouseEventHandler<HTMLElement>}> = ({handleClick}) => {
+  const [disabled, setDisabled] = useState(false);
+  
   const { t } = useTranslation();
-  return <button className='btn-action'>{t("Ledger.Continue")}</button>;
+  return <button 
+  className='btn-action'
+  onClick={handleClick}
+  type="button"
+  disabled={disabled}
+  
+  >
+    {t("Ledger.Continue")}
+  </button>;
 }
 
+
+export default Button

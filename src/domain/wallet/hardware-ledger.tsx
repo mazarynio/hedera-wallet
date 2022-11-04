@@ -6,10 +6,10 @@ import Transport from "@ledgerhq/hw-transport";
 // @ts-ignore
 import BIPPath from "bip32-path";
 
-const hardwareLedger = () => {
+const LedgerHardwareWallet = () => {
   return (
-    <div>hardwareLedger</div>
+    <div> LedgerHardwareWallet</div>
   )
 }
 
-export default hardwareLedger
+export default LedgerHardwareWallet
