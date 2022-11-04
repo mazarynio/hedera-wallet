@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
@@ -25,22 +24,24 @@ i18n
   });
 
 
-export type ButtonProps = {
-    title: String
-    desc: String
-    route?: string
+type ButtonProps = {
+    handleClick: () => void
+    disabled?: boolean
+    // title: String
+    // desc: String
+    // route?: string
 }
 
 
-const Button: React.FC<{handleClick?: React.MouseEventHandler<HTMLElement>}> = ({handleClick}) => {
-  const [disabled, setDisabled] = useState(false);
+export const Button = (props: ButtonProps) => {
   
   const { t } = useTranslation();
+
   return <button 
   className='btn-action'
-  onClick={handleClick}
+  onClick={props.handleClick}
   type="button"
-  disabled={disabled}
+  disabled={props.disabled ? props.disabled : false}
   
   >
     {t("Ledger.Continue")}

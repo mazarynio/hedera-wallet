@@ -1,14 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import BtnBack from "../../create/components/BtnBack"
 import LedgerInfo from "../components/LedgerInfo"
-import Button from "../../../common/Button"
-
+import {Button} from "../../../common/Button"
 
 const Ledger = () => {
 
   const navigate = useNavigate();
   const handleClick = () => {
-      navigate("/access/account");
+    navigate("/access/account");
   }
 
   return (
@@ -20,7 +19,8 @@ const Ledger = () => {
       <div>
          <LedgerInfo />
          <Button 
-          {...handleClick}
+         handleClick={handleClick} 
+         
          />
       </div>
     </div>
