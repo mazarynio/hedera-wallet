@@ -3,9 +3,11 @@ import './App.css';
 import Create from "./pages/create";
 import Home from "./pages/home";
 import Software from "./pages/create/Software";
+import Mnemonic from "./pages/create/Mnemonic";
 import Hardware from "./pages/access/Hardware";
 import Ledger from "./pages/access/Ledger/Ledger";
 import Account from "./pages/access/Account/Account";
+
 
 
 function App() {
@@ -33,12 +35,17 @@ function App() {
          <Route path="/" element={<Home />} />
          <Route path="/create" element={<Create />} />
          <Route path="/create/software" element={<Software />} />
+         <Route path="/create/mnemonic" element={<Mnemonic />} />
          <Route path="/access/hardware" element={<Hardware />} />
          <Route path="/access/hardware/ledger" element={<Ledger/>} />
          <Route path="/access/account" element={<Account />} />
          <Route
           path="/create/hardware"
           element={<Navigate to="/access/hardware" replace />}
+          />
+         <Route
+          path="/create/software/mnemonic"
+          element={<Navigate to="/create/mnemonic" replace />}
           />
         
       </Routes>

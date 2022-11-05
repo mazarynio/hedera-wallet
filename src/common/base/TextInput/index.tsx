@@ -3,7 +3,9 @@ import "./TextInput.css"
 
 const TextInput = () => {
   return (
-    <div>TextInput</div>
+    <div className='text-input'>
+        <input />
+    </div>
   )
 }
 

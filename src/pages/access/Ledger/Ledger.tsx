@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import BtnBack from "../../create/components/BtnBack"
 import LedgerInfo from "../components/LedgerInfo"
-import {Button} from "../../../common/Button"
+import {Button} from "../../../common/base/Button"
+
+import "./Ledger.css"
 
 const Ledger = () => {
 
@@ -11,7 +13,7 @@ const Ledger = () => {
   }
 
   return (
-    <div className='hardware'>
+    <div className='ledger'>
       <div>
         <BtnBack />
       </div>

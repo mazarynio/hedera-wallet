@@ -1,0 +1,12 @@
+.ledger {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ledger .heading-1 {
+    color: black;
+    text-align: left;
+}
+

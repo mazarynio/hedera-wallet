@@ -1,0 +1,12 @@
+.account {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account .heading-1 {
+    color: black;
+    text-align: left;
+}
+

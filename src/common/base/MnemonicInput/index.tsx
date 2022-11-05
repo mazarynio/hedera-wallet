@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AccountIdInput = () => {
+const index = () => {
   return (
     <div>
         
@@ -8,4 +8,4 @@ const AccountIdInput = () => {
   )
 }
 
-export default AccountIdInput
+export default index

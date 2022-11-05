@@ -1,0 +1,11 @@
+.mnemonic {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mnemonic .heading-1 {
+    color: black;
+    text-align: left;
+}
