@@ -7,8 +7,7 @@ import Mnemonic from "./pages/create/Mnemonic";
 import Hardware from "./pages/access/Hardware";
 import Ledger from "./pages/access/Ledger/Ledger";
 import Account from "./pages/access/Account/Account";
-
-
+import MnemonicVerify from "./pages/create/MnemonicVerify";
 
 function App() {
 
@@ -36,6 +35,7 @@ function App() {
          <Route path="/create" element={<Create />} />
          <Route path="/create/software" element={<Software />} />
          <Route path="/create/mnemonic" element={<Mnemonic />} />
+         <Route path="/create/mnemonic/verify" element={<MnemonicVerify />} />
          <Route path="/access/hardware" element={<Hardware />} />
          <Route path="/access/hardware/ledger" element={<Ledger/>} />
          <Route path="/access/account" element={<Account />} />
@@ -47,7 +47,6 @@ function App() {
           path="/create/software/mnemonic"
           element={<Navigate to="/create/mnemonic" replace />}
           />
-        
       </Routes>
       {/* <footer>
       <Link to="/privacy">

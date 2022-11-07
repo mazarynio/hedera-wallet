@@ -1,0 +1,10 @@
+.wrap-mnemonic__input {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    margin: 0 0 30px 0;
+}
+
+.mnemonic__input-content {
+    margin: 5px 0;
+}

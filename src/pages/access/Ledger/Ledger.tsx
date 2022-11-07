@@ -21,8 +21,7 @@ const Ledger = () => {
       <div>
          <LedgerInfo />
          <Button 
-         handleClick={handleClick} 
-         
+          handleClick={handleClick} 
          />
       </div>
     </div>
