@@ -5,6 +5,7 @@ import './Hardware.css';
 
 
 const Hardware = () => {
+
   return (
     <div className='hardware'>
       <div>
