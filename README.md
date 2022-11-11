@@ -1,6 +1,9 @@
-# Hedera Wallet
+# Mazaryn Hedera Wallet (Browser Wallet)
 
-## TSX Client-Side
+## Mazaryn Hedera Wallet is a client-side interface helping you interact with Hedera.
+
+
+To get started with Mazaryn Hedera Wallet:
 
 
 * `$ npm i` - Install Node Package Manager
