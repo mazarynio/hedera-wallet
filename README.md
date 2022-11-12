@@ -2,6 +2,11 @@
 
 ## Mazaryn Hedera Wallet is a client-side interface helping you interact with Hedera.
 
+* Account Creation [ ] 
+* Account Import [ ] 
+* NFT / Fungible Tokens [ ] 
+* Ledger Compatibility [ ] 
+
 
 To get started with Mazaryn Hedera Wallet:
 
