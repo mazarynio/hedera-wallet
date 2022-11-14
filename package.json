@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@hashgraph/sdk": "^2.18.5",
-    "@hieudoanm/pino": "0.0.1",
     "@ledgerhq/hw-transport": "^6.27.6",
     "@reduxjs/toolkit": "^1.8.6",
     "@testing-library/jest-dom": "^5.16.5",

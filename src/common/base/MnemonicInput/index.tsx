@@ -1,3 +1,4 @@
+import produce from 'immer'
 import './MnemonicInput.css'
 
 
@@ -5,6 +6,7 @@ type MnemonicProps = {
   disabled?: boolean
   mnemonicPhrase?: Array<string>
   verifyPhrase?: Array<any>
+  setVerifyPhrase?: any
   readOnly?: boolean
   wordCount?: number
   // title: String
@@ -14,7 +16,6 @@ type MnemonicProps = {
 
 
 const Index = (props: MnemonicProps) => {
-
 
   console.table(props?.mnemonicPhrase)
   return (
@@ -43,8 +44,15 @@ const Index = (props: MnemonicProps) => {
             </label>
             <input 
               value={verifyWord.word}
-              placeholder={verifyWord.word}
               disabled={props.readOnly}
+              onChange={e => {
+                const verifyWord = e.target.value;
+                props.setVerifyPhrase((currentPhrase: any) => 
+                  produce(currentPhrase, (v: { verifyWord: { word: string } }[]) => {
+                    v[index].verifyWord.word = verifyWord;
+                  })  
+                )
+              }}
               
             />
         </div>
@@ -54,3 +62,5 @@ const Index = (props: MnemonicProps) => {
 }
 
 export default Index
+
+

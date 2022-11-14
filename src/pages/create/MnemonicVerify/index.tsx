@@ -151,7 +151,6 @@ const Index = () => {
         <form>
           <MnemonicInput
             verifyPhrase={[...verifyPhrase?.toString().split(' ')]}
-            
           />
           <Button 
             handleClick={handleClick}
