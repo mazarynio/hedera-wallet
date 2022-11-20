@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import{ Mnemonic } from "@hashgraph/sdk";
-import { MnemonicSoftwareWallet } from "../../../domain/wallet/software-mnemonic";
+// import { MnemonicSoftwareWallet } from "../../../domain/wallet/software-mnemonic";
 
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
@@ -12,7 +12,7 @@ import BtnBack from '../components/BtnBack';
 import MnemonicInput from '../../../common/base/MnemonicInput';
 
 import './Mnemonic.css'
-import { Wallet } from '../../../domain/wallet/abstract';
+// import { Wallet } from '../../../domain/wallet/abstract';
 import Button from '../../../common/base/Button';
 
 

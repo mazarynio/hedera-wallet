@@ -1,7 +1,52 @@
 .homepage {
- padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.homepage .heading-1 {
-    color: black;
+.homepage_box {
+    max-width: 387px;
+    height: 492px;
+    background: linear-gradient(0deg, #323340, #323340), #D2D2D1;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.homepage_box .box_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.homepage_box .box_content .content_image {
+    display: block;
+    margin: 0 auto;
+}
+
+.homepage .box_content .content_heading-1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FAFAFA;
+    margin: 15px 0 0 0;
+}
+
+.homepage .box_content .content_sub-heading-1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFF;
+    text-align: center;
+    margin: 15px 0 25px 0;
+}
+
+.homepage .box_content .box_btns {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 30px);
+    gap: 15px;
 }

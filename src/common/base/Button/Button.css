@@ -1,16 +1,23 @@
 .btn-action {
-    background: #002D62;
+    background: #4385F5;
     color: white;
-    border-radius: 25px;
-    padding: 14px 22px;
-    font-size: 18px;
+    border-radius: 10px;
+    padding: 12px 48px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
     border-color: transparent;
     width: 100%;
     cursor: pointer;
-    opacity: 0.7;
     transition: opacity 150ms ease-in-out;
 }
 
+.btn-action.--secondary {
+    border-color:  #4385F5;
+    background: transparent;
+    color:  #4385F5;
+}
+
 .btn-action:hover {
-    opacity: 0.5;
+    opacity: 0.7;
 }

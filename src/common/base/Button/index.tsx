@@ -4,6 +4,7 @@ type ButtonProps = {
     handleClick: () => void
     disabled?: boolean
     children: string
+    secondary?: boolean
     // title: String
     // desc: String
     // route?: string
@@ -13,7 +14,7 @@ type ButtonProps = {
 export const Button = (props: ButtonProps) => {
 
   return <button 
-  className='btn-action'
+  className={props.secondary ? 'btn-action --secondary' : 'btn-action'}
   onClick={props.handleClick}
   type="button"
   disabled={props.disabled ? props.disabled : false}

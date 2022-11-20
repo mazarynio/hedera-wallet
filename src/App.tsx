@@ -1,4 +1,6 @@
-import { Routes, Route, Link, Navigate} from "react-router-dom";
+import Header from "./common/components/Header/Index"
+
+import { Routes, Route, Navigate} from "react-router-dom";
 import './App.css';
 import Create from "./pages/create";
 import Home from "./pages/home";
@@ -9,27 +11,13 @@ import Ledger from "./pages/access/Ledger/Ledger";
 import Account from "./pages/access/Account/Account";
 import MnemonicVerify from "./pages/create/MnemonicVerify";
 
+
+
 function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <Link to="/">
-           HederaWallet
-        </Link>
-        <Link to="/about">
-            About
-        </Link>
-        <Link to="/faqs">
-            FAQs
-        </Link>
-        <Link to="/access">
-          Access
-        </Link>
-        <Link to="/create">
-          Create Wallet
-        </Link>
-      </header>
+      <Header />
       <Routes>
          <Route path="/" element={<Home />} />
          <Route path="/create" element={<Create />} />

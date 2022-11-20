@@ -1,24 +1,55 @@
-:root {
-  --main-gradient:  rgb(240,248,255);
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-Regular.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-Medium.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+
+:root {
+  --main-gradient:  rgb(240,248,255);
+  --mazarynBlack: #151620;
+  --mazarynGrey: #60616D;
+  --mazarynBg:   #252630;
+}
 
 body {
   margin: 0;
-  background: #449DD11A;
-  background: linear-gradient(90deg, #449DD11A 0%, #449DD11A 20%, #449DD11A  50%, #449DD11A 100%);
+  background: var(--mazarynBg);
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
 
 .App-header {
-  background-color: white;
-  box-shadow: 0px 3px 3px #ddd;
-  min-height: 4rem;
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-  gap: 40px;
+  color: #fff;
 }
 
 .App-header a {
@@ -26,5 +57,6 @@ body {
   text-decoration: none;
   font-size: 0.875em;
   font-weight: 300;
+  padding: 20px;
 }
 

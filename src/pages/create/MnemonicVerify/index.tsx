@@ -11,8 +11,8 @@ import './MnemonicVerify.css'
 import MnemonicInput from "../../../common/base/MnemonicInput";
 import { useNavigate } from "react-router-dom";
 import Button from "../../../common/base/Button";
-import { useEffect, useState } from "react";
-import { Mnemonic } from "@hashgraph/sdk";
+import { useState } from "react";
+// import { Mnemonic } from "@hashgraph/sdk";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -42,7 +42,7 @@ const Index = () => {
     navigate("/create/mnemonic/verify");
   }
 
-  const [verifyPhrase, setVerifyPhrase] = useState<any>([
+  const [verifyPhrase] = useState<any>([
     {
       id: nanoid(),
       word: ''  

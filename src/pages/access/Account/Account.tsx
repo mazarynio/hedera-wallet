@@ -1,7 +1,7 @@
-import type { AccountId, PublicKey } from "@hashgraph/sdk";
+// import type { AccountId, PublicKey } from "@hashgraph/sdk";
 import AccountIdInput from "../../../common/base/AccountIdInput";
 // import { LedgerHardwareWallet } from "../../../domain/wallet/hardware-ledger";
-import { Wallet } from "../../../domain/wallet/abstract";
+// import { Wallet } from "../../../domain/wallet/abstract";
 import BtnBack from "../../create/components/BtnBack";
 
 import i18n from "i18next";
