@@ -11,7 +11,7 @@
 To get started with Mazaryn Hedera Wallet:
 
 
-* `$ yarn` - Install Node Package Manager
+* `$ yarn` - Install Yarn Package Manager
 
 * `.env` file -  MY_ACCOUNT_ID = ENTER YOUR ACCOUNT ID, MY_PRIVATE_KEY = ENTER YOUR PRIVATE KEY 
 
