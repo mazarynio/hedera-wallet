@@ -484,7 +484,7 @@
     "Staking.claimInfo": "Submit any transaction or query that affects your balance and your unclaimed rewards will be added to your account.",
     "Welcome.create.button": "New Wallet",
     "Welcome.restore.button": "Restore Wallet",
-    "Password.passwordInfo": "Minimum 8 characters ith 1 lowercase, 1 uppercase, 1 number, and 1 symbol",
+    "Password.passwordInfo": "Minimum 8 characters with 1 lowercase, 1 uppercase, 1 number, and 1 symbol",
     "Password.formTitle": "New wallet",
     "Register.inputInstructions.password": "Create strong password",
     "Register.inputInstructions.confirmPassword": "Type password again",

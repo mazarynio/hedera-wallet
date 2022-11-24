@@ -25,8 +25,7 @@ i18n
     react: {useSuspense: false}
   });
 
-  const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
-
+  const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&*_,{}-]).{8,64}$/;
 
 const Register: React.FC = () => {
 
