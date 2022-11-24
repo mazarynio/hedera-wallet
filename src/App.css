@@ -1,13 +1,21 @@
 @font-face {
   font-family: 'Poppins';
   src: url('./fonts/poppins/Poppins-Regular.woff2') format('woff2');
+  font-weight: 400;
 }
 
 @font-face {
   font-family: 'Poppins';
   src: url('./fonts/poppins/Poppins-Medium.woff2') format('woff2');
-  font-weight: 400;
+  font-weight: 500;
 }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-Thin.woff2') format('woff2');
+  font-weight: 300;
+}
+
 
 @font-face {
   font-family: 'Poppins';
@@ -29,6 +37,7 @@
   --mazarynBg:   #252630;
 }
 
+
 body {
   margin: 0;
   background: var(--mazarynBg);
@@ -40,7 +49,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .App-header {
@@ -50,6 +59,7 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #fff;
+  margin: 10px;
 }
 
 .App-header a {
@@ -57,6 +67,12 @@ body {
   text-decoration: none;
   font-size: 0.875em;
   font-weight: 300;
-  padding: 20px;
+  padding: 15px;
+}
+
+/* Modifiers */
+
+.--hide {
+  opacity: 0;
 }
 

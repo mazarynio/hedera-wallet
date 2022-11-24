@@ -21,3 +21,8 @@
 .btn-action:hover {
     opacity: 0.7;
 }
+
+.btn-action:disabled {
+    opacity: 0.2;
+    cursor: default;
+}

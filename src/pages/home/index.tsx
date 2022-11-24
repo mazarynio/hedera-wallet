@@ -36,7 +36,7 @@ const Index = () => {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate("/create");
+    navigate("/create/password");
   }
 
 

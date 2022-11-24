@@ -12,13 +12,13 @@
 }
 
 .arrow-left {
-    height: 22px;
-    width:  22px;
-    fill: #002D62;
+    height: 40px;
+    width:  40px;
+    fill: #CFD0DD;
 }
 
 .btn-back span {
     font-size: 16px;
-    color: #002D62;
+    color: #CFD0DD;
     margin-left: 10px;
 }

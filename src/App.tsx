@@ -10,17 +10,17 @@ import Hardware from "./pages/access/Hardware";
 import Ledger from "./pages/access/Ledger/Ledger";
 import Account from "./pages/access/Account/Account";
 import MnemonicVerify from "./pages/create/MnemonicVerify";
-
-
+import Password from "./pages/create/Password";
 
 function App() {
 
   return (
-    <div className="App">
+    <main className="App">
       <Header />
       <Routes>
          <Route path="/" element={<Home />} />
          <Route path="/create" element={<Create />} />
+         <Route path="/create/password" element={<Password />} />
          <Route path="/create/software" element={<Software />} />
          <Route path="/create/mnemonic" element={<Mnemonic />} />
          <Route path="/create/mnemonic/verify" element={<MnemonicVerify />} />
@@ -53,7 +53,7 @@ function App() {
           Create Wallet
         </Link>
       </footer> */}
-    </div>
+    </main>
   );
 }
 

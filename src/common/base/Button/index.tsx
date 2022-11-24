@@ -17,7 +17,7 @@ export const Button = (props: ButtonProps) => {
   className={props.secondary ? 'btn-action --secondary' : 'btn-action'}
   onClick={props.handleClick}
   type="button"
-  disabled={props.disabled ? props.disabled : false}
+  disabled={props.disabled}
   >
     {props.children}
   </button>;

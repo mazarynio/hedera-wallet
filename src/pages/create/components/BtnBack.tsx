@@ -1,4 +1,4 @@
-import { BsArrowLeft } from 'react-icons/bs'
+import { MdKeyboardArrowLeft} from "react-icons/md";
 import './BtnBack.css'
 
 const BtnBack = () => {
@@ -6,12 +6,11 @@ const BtnBack = () => {
     <button
       className='btn-back' 
       onClick={() => window.history.back()}>
-      <BsArrowLeft
+      <MdKeyboardArrowLeft
         className='arrow-left' 
         />
-      <span>Back</span>
     </button>
   )
 }
 
-export default BtnBack
+export default BtnBack 

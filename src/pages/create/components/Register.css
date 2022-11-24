@@ -1,0 +1,57 @@
+.register {
+    width: 100%;
+}
+
+.register .content_heading-1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FAFAFA;
+    margin: 0 0 20px 0;
+}
+
+.register .form-register .input-register {
+    background: linear-gradient(0deg, #252630, #252630), #60616D;
+    border: 2px solid #60616D;
+    border-radius: 10px;
+    padding: 12px 10px;
+    width: -webkit-fill-available;
+    color: #CFD0DD;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.register .form-register input.input-register::placeholder {
+    font-weight: 400;
+    color: #CFD0DD;
+}
+
+.register .form-register input.input-register:focus-visible  {
+    outline: 2px solid #4385F5;
+    border-color: transparent;
+}
+
+.register .form-register .instructions {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #CFD0DD;
+    margin: 10px 0 15px 0;
+    max-height: 50px;
+    transition: opacity .05s ease-in-out, transform .10s ease-out, max-height .10s ease-out;
+}
+
+.register .form-register .instructions.--hide {
+    max-height: 0px;
+    transform: translate(-20px, 0);
+}
+
+.register .form-register .btn-action {
+    margin: 10px 0 0 0;
+}
+
+.register .form-register .instructions.agreement {
+    margin: 30px 0 0 0;
+    text-align: center;
+}
