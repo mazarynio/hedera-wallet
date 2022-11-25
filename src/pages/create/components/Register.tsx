@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
@@ -7,6 +8,8 @@ import HttpApi from 'i18next-http-backend';
 
 import './Register.css'
 import Button from "../../../common/base/Button";
+
+
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -28,6 +31,8 @@ i18n
   const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&*_,{}-]).{8,64}$/;
 
 const Register: React.FC = () => {
+
+    const navigate = useNavigate();
 
     const pwdRef = useRef<HTMLInputElement | null>(null);
     // const errRef = useRef<HTMLInputElement | null>(null);
@@ -73,6 +78,11 @@ const Register: React.FC = () => {
         setErrMsg('');
     },[user, pwd, matchPwd])
 
+    const handleClick = (e: React.MouseEvent<HTMLInputElement>) => {
+      const placeholder = e.currentTarget;
+      console.log(placeholder)
+    }
+
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       // If button enabled with JS hack
@@ -83,6 +93,7 @@ const Register: React.FC = () => {
       }
       console.log(user, pwd);
       setSuccess(true);
+      navigate("/access/account");
     }
 
     const { t } = useTranslation();
@@ -103,6 +114,7 @@ const Register: React.FC = () => {
                 aria-invalid={validPwd ? "false" : "true"}
                 aria-describedby="pwdnote"
                 placeholder="Password"
+                onClick={handleClick}
                 onFocus={() => setPwdFocus(true)}
                 onBlur={() => setPwdFocus(false)}
             />
@@ -121,6 +133,7 @@ const Register: React.FC = () => {
               aria-invalid={validMatch ? "false" : "true"}
               aria-describedby="confirmnote"
               placeholder="Repeat Password"
+              onClick={handleClick}
               onFocus={() => setMatchFocus(true)}
               onBlur={() => setMatchFocus(false)}
             />
@@ -131,7 +144,6 @@ const Register: React.FC = () => {
                 {t("Register.inputInstructions.confirmPassword")}
             </p>
             <Button
-              handleClick={() => setErrMsg('')}
               disabled={disabled}
             >
               {t("Register.button.createWallet")}

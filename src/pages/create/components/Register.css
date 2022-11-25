@@ -24,11 +24,22 @@
 
 .register .form-register input.input-register::placeholder {
     font-weight: 400;
+    color:  #60616D;
+}
+
+.register .form-register input.input-register:placeholder-shown {
     color: #CFD0DD;
 }
 
+.register .form-register input.input-register:hover {
+    outline: 2px solid #CFD0DD;
+    background: linear-gradient(0deg, #252630CC, #252630CC), #60616D; 
+    border-color: transparent;
+}
+
 .register .form-register input.input-register:focus-visible  {
-    outline: 2px solid #4385F5;
+    outline: 2px solid #CFD0DD;
+    background: linear-gradient(0deg, #252630CC, #252630CC), #60616D; 
     border-color: transparent;
 }
 
@@ -39,7 +50,7 @@
     color: #CFD0DD;
     margin: 10px 0 15px 0;
     max-height: 50px;
-    transition: opacity .05s ease-in-out, transform .10s ease-out, max-height .10s ease-out;
+    transition: opacity .07s ease-in-out, transform .15s ease-out, max-height .25s ease-out;
 }
 
 .register .form-register .instructions.--hide {
