@@ -26,3 +26,9 @@
     opacity: 0.2;
     cursor: default;
 }
+
+.btn-action.--secondary:disabled {
+    color: #60616D;
+    border: 2px solid #60616D;
+    cursor: default;
+}

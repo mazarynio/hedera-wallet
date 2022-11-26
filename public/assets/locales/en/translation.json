@@ -488,5 +488,12 @@
     "Password.formTitle": "New wallet",
     "Register.inputInstructions.password": "Create strong password",
     "Register.inputInstructions.confirmPassword": "Type password again",
-    "Register.button.createWallet": "New Wallet"
+    "Register.button.createWallet": "New Wallet",
+    "RecoveryPhrase.title": "Recovery phrase",
+    "RecoveryPhrase.instructions": "Please write down 12-word Backup Phrase and keep a copy in a secure place so you can restore your wallet at any time.",
+    "RecoveryPhrase.button.copy": "Copy to Clipboard",
+    "RecoveryPhrase.button.next": "Next",
+    "ConfirmRecovery.title": "Confirm recovery phrase",
+    "ConfirmRecovery.instructions": "Please select 12-word Backup Phrase in correct order",
+    "ConfirmRecovery.button": "Next"
 }

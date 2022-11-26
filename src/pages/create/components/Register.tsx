@@ -9,8 +9,6 @@ import HttpApi from 'i18next-http-backend';
 import './Register.css'
 import Button from "../../../common/base/Button";
 
-
-
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .use(LanguageDetector)
@@ -93,7 +91,7 @@ const Register: React.FC = () => {
       }
       console.log(user, pwd);
       setSuccess(true);
-      navigate("/access/account");
+      navigate("/access/account/recovery-phrase");
     }
 
     const { t } = useTranslation();
