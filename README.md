@@ -18,7 +18,7 @@ $ yarn
 Create file named `.env` & add in the file: MY_ACCOUNT_ID = ENTER YOUR ACCOUNT ID, MY_PRIVATE_KEY = ENTER YOUR PRIVATE KEY. 
 
 `````
-$ .env
+$ touch .env
 `````
 
 Run the app locally
