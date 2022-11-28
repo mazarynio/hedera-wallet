@@ -7,7 +7,7 @@
 * NFT / Fungible Tokens [ ] 
 * Ledger Compatibility [ ] 
 
-### Get started with Mazaryn Hedera Wallet:
+### Getting Started with Mazaryn Hedera Wallet:
 
 Install Yarn Package Manager
  
