@@ -1,6 +1,6 @@
 # Mazaryn Hedera Wallet (Browser Wallet)
 
-## Mazaryn Hedera Wallet is a client-side interface helping you interact with Hedera.
+### Mazaryn Hedera Wallet is a client-side interface helping you interact with Hedera.
 
 * Account Creation [ ] 
 * Account Import [ ] 
@@ -15,7 +15,7 @@ Install Yarn Package Manager
 $ `yarn` 
 ``````
 
-Create file named `.env` & add in the file: MY_ACCOUNT_ID = ENTER YOUR ACCOUNT ID, MY_PRIVATE_KEY = ENTER YOUR PRIVATE KEY 
+Create file named `.env` & add in the file: MY_ACCOUNT_ID = ENTER YOUR ACCOUNT ID, MY_PRIVATE_KEY = ENTER YOUR PRIVATE KEY. 
 
 `````
 $ `.env`
