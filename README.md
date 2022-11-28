@@ -7,15 +7,25 @@
 * NFT / Fungible Tokens [ ] 
 * Ledger Compatibility [ ] 
 
+### Get started with Mazaryn Hedera Wallet:
 
-To get started with Mazaryn Hedera Wallet:
+Install Yarn Package Manager
+ 
+`````
+$ `yarn` 
+``````
 
+Create file named `.env` & add in the file: MY_ACCOUNT_ID = ENTER YOUR ACCOUNT ID, MY_PRIVATE_KEY = ENTER YOUR PRIVATE KEY 
 
-* `$ yarn` - Install Yarn Package Manager
+`````
+$ `.env`
+`````
 
-* `.env` file -  MY_ACCOUNT_ID = ENTER YOUR ACCOUNT ID, MY_PRIVATE_KEY = ENTER YOUR PRIVATE KEY 
+Run the app locally
 
-* `$ yarn start` - To run the app locally
+````
+$ yarn start
+````
 
 
 ![Captura_de_Tela_2022-11-20_as_17 28 11](https://user-images.githubusercontent.com/59366270/202999568-7ccf0be0-c9d8-468f-bf67-62ff64a7fd28.jpg)
