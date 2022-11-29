@@ -1,3 +1,4 @@
+import { verify } from 'crypto'
 import produce from 'immer'
 import './MnemonicInput.css'
 
@@ -5,7 +6,7 @@ import './MnemonicInput.css'
 type MnemonicProps = {
   disabled?: boolean
   mnemonicPhrase?: Array<string>
-  verifyPhrase?: Array<any>
+  verifyPhrase?: Array<string>
   setVerifyPhrase?: any
   readOnly?: boolean
   wordCount?: number
@@ -16,6 +17,7 @@ type MnemonicProps = {
 
 
 const Index = (props: MnemonicProps) => {
+  
 
   console.table(props?.mnemonicPhrase)
   return (
@@ -34,7 +36,7 @@ const Index = (props: MnemonicProps) => {
               disabled={props.readOnly}
             />
         </div>
-      )) : props?.verifyPhrase?.map((verifyWord, index) => (
+      )) : props?.verifyPhrase?.map((word, index) => (
         <div
             className='mnemonic__input-content'
             key={index}
@@ -43,7 +45,7 @@ const Index = (props: MnemonicProps) => {
               {`${index + 1}`?.toString().padStart(2,  "\u{00A0}" )}.
             </label>
             <input 
-              value={verifyWord.word}
+              value={word}
               disabled={props.readOnly}
               onChange={e => {
                 const verifyWord = e.target.value;

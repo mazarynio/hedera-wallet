@@ -11,8 +11,8 @@ import Ledger from "./pages/access/Ledger/Ledger";
 import Account from "./pages/access/Account/Account";
 import MnemonicVerify from "./pages/create/MnemonicVerify";
 import Password from "./pages/create/Password";
-import RecoveryPhrase from "./pages/access/Account/RecoveryPhrase/RecoveryPhrase";
 import ConfirmRecovery from "./pages/access/Account/ConfirmRecovery/ConfirmRecovery";
+import RecoveryPhrase from "./pages/access/Account/RecoveryPhrase/RecoveryPhrase";
 
 function App() {
 
@@ -28,7 +28,7 @@ function App() {
          <Route path="/create/mnemonic/verify" element={<MnemonicVerify />} />
          <Route path="/access/hardware" element={<Hardware />} />
          <Route path="/access/hardware/ledger" element={<Ledger/>} />
-         <Route path="/access/account/" element={<Account />} />
+         <Route path="/access/account" element={<Account />} />
          <Route path="/access/account/recovery-phrase" element={<RecoveryPhrase/>} />
          <Route path="/access/account/confirm-recovery" element={<ConfirmRecovery/>} />
          <Route

@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Button from "../../../../common/base/Button";
 import MnemonicInput from "../../../../common/base/MnemonicInput";
-import "./ConfirmRecovery.css";
 
-import{ Mnemonic } from "@hashgraph/sdk";
 import { useNavigate } from "react-router-dom";
 
 import { useTranslation, initReactI18next } from "react-i18next";
@@ -11,7 +9,13 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 import i18n from "i18next";
 import BtnBack from "../../../create/components/BtnBack";
+import { MnemonicContext } from "../../../..";
 
+import "./ConfirmRecovery.css";
+import MnemonicGuess from "../../../../common/base/MnemonicGuess";
+import { nanoid } from "nanoid";
+
+var shuffle = require('shuffle-array')
 
 // TODO Confirm Recovery Phrase 
 // TODO Persist 12-word Backup Phrase in global state.
@@ -35,19 +39,30 @@ i18n
     react: {useSuspense: false}
   });
 
+  
 
 const ConfirmRecovery = () => {
 
     const { t } = useTranslation();
 
-    const [mnemonicPhrase, setMnemonicPhrase] = useState<any>([]);
+    const {mnemonicPhrase} = useContext(MnemonicContext);
     // const [isCopied, setIsCopied] = useState<boolean>(false);
-    // const [disabled, setDisabled] = useState<boolean>(true);
-  
+    const [disabled, setDisabled] = useState<boolean>(true);
+    const [randomArray, setRandomArray] = useState<any>([]);
+
+
+    let word = ' '
+
+    const [verifyPhrase, setVerifyPhrase] = useState<any>([
+        
+    ]);
+
+
     useEffect(() => {
-      Mnemonic.generate12().then((mnemonic) => setMnemonicPhrase(mnemonic))
+      setRandomArray(mnemonicPhrase)
     },[])
-    
+
+  
     const navigate = useNavigate();
 
     const handleClick = async () => {
@@ -66,6 +81,7 @@ const ConfirmRecovery = () => {
         e.preventDefault();
         navigate("/account/confirm-recovery");
     }
+    
 
   return (
     <div className="confirmRecovery">
@@ -78,13 +94,17 @@ const ConfirmRecovery = () => {
                 <p className='content_sub-heading-1'>{t("ConfirmRecovery.instructions")}</p>
                 <form onSubmit={handleSubmit}>
                     <MnemonicInput
-                    mnemonicPhrase={[...mnemonicPhrase?.toString().split(' ')]}
+                    mnemonicPhrase={[...verifyPhrase?.toString()]}
+                    readOnly
+                    />
+                    <MnemonicGuess
+                    mnemonicPhrase={shuffle([...randomArray?.toString().split(' ')])}
                     readOnly
                     />
                     <div className="box_btns">
                         <Button 
                         handleClick={handleClick}
-                        
+                        disabled={disabled}
                         type="button"
                         >
                             {t("ConfirmRecovery.button")}

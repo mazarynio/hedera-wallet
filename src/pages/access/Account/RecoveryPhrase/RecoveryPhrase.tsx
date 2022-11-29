@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import{ Mnemonic } from "@hashgraph/sdk";
 
@@ -14,6 +14,8 @@ import HttpApi from 'i18next-http-backend';
 import i18n from "i18next";
 
 import "./RecoveryPhrase.css";
+import { MnemonicContext } from "../../../..";
+
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -36,13 +38,12 @@ i18n
 const RecoveryPhrase = () => {
 
     const { t } = useTranslation();
-
-    const [mnemonicPhrase, setMnemonicPhrase] = useState<any>([]);
+    const {mnemonicPhrase, setMnemonicPhrase} = useContext(MnemonicContext);
     const [isCopied, setIsCopied] = useState<boolean>(false);
     const [disabled, setDisabled] = useState<boolean>(true);
   
     useEffect(() => {
-      Mnemonic.generate12().then((mnemonic) => setMnemonicPhrase(mnemonic))
+        Mnemonic.generate12().then((mnemonic) => setMnemonicPhrase(mnemonic))
     },[])
     
     const navigate = useNavigate();

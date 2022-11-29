@@ -1,5 +1,6 @@
 import type { PrivateKey, AccountId, PublicKey } from "@hashgraph/sdk";
 import { BigNumber } from "bignumber.js";
+
 import { configureStore } from '@reduxjs/toolkit'
 
 import { Wallet } from "./domain/wallet/abstract";
@@ -44,15 +45,15 @@ interface TransportStatusError extends Error {
 }
 
 
-const useStore = configureStore({
+export const store = configureStore({
     reducer: {
-
+    
     }
 })
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
-export type RootState = ReturnType<typeof useStore.getState>
-// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
-export type AppDispatch = typeof useStore.dispatch
+// // Infer the `RootState` and `AppDispatch` types from the store itself
+// export type RootState = ReturnType<typeof useStore.getState>
+// // Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+// export type AppDispatch = typeof useStore.dispatch
 
 

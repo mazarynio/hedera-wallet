@@ -1,0 +1,21 @@
+.wrap-mnemonic__guess {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.wrap-mnemonic__guess .mnemonic__guess-content {
+    display: inline-block;
+    padding: 0px 4px 0px 4px;
+}
+
+.mnemonic__guess-content .btn-guess__content {
+    display: contents;
+    color: #60616D;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+}
