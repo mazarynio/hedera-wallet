@@ -13,6 +13,7 @@ import MnemonicVerify from "./pages/create/MnemonicVerify";
 import Password from "./pages/create/Password";
 import ConfirmRecovery from "./pages/access/Account/ConfirmRecovery/ConfirmRecovery";
 import RecoveryPhrase from "./pages/access/Account/RecoveryPhrase/RecoveryPhrase";
+import Success from "./pages/access/Account/Success/Success";
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
          <Route path="/access/account" element={<Account />} />
          <Route path="/access/account/recovery-phrase" element={<RecoveryPhrase/>} />
          <Route path="/access/account/confirm-recovery" element={<ConfirmRecovery/>} />
+         <Route path="/access/account/success" element={<Success/>} />
          <Route
           path="/create/hardware"
           element={<Navigate to="/access/hardware" replace />}

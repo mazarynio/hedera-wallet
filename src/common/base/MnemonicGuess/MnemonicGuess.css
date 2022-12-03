@@ -19,3 +19,12 @@
     text-align: center;
     cursor: pointer;
 }
+
+.mnemonic__guess-content .btn-guess__content.--selected {
+    color: #4385F5;
+}
+
+.mnemonic__guess-content #selected {
+    color: #4385F5;
+}
+

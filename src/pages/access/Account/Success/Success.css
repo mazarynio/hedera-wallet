@@ -1,60 +1,50 @@
-.confirmRecovery_wrap-btn {
-    position: relative;
-}
-
-.confirmRecovery_wrap-btn > button {
-    position: absolute;
-    left: -120px;
-    top: -10px
-}
-
-.confirmRecovery_box {
+.success_box {
   max-width: 387px;
-  height: 550px;
+  height: 545px;
   background: linear-gradient(0deg, #323340, #323340), #d2d2d1;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
 
-.confirmRecovery_box .box_content {
+.success_box .box_content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 95%;
+  width: 80%;
   margin: 0 auto;
 }
 
-.confirmRecovery_box .box_content .content_image {
+.success_box .box_content .content_image {
   display: block;
   margin: 0 auto;
 }
 
-.confirmRecovery .box_content .content_heading-1 {
+.success .box_content .content_heading-1 {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   color: #fafafa;
-  margin: 0 0 30px 0;
+  margin: 0 0 40px 0;
 }
 
-.confirmRecovery .box_content .content_sub-heading-1 {
+.success .box_content .content_sub-heading-1 {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #fff;
   text-align: center;
-  margin: 0 0 30px 0;
-  max-width: 330px;
+  margin: 40px 0;
+  max-width: 340px;
 }
 
-.confirmRecovery .box_content form {
+.success .box_content form {
     width: 90%;
     margin: 0 auto;
 }
 
-.confirmRecovery .box_content .box_btns {
+.success .box_content .box_btns {
   display: flex;
   flex-direction: column;
   gap: 15px;

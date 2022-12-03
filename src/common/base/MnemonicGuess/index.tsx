@@ -1,24 +1,27 @@
+import React from 'react'
 import './MnemonicGuess.css'
 
 
 type MnemonicProps = {
-  handleClick?: () => void
-  disabled?: boolean
+  handleWordClick?: (e: React.MouseEvent<HTMLButtonElement>) => void
   mnemonicPhrase?: Array<string>
   verifyPhrase?: Array<any>
   setVerifyPhrase?: any
-  readOnly?: boolean
   wordCount?: number
+  isThisWordSelected?: string
+  // isSelected?: boolean
   // title: String
   // desc: String
   // route?: string
 }
 
 
-const Index = (props: MnemonicProps) => {
+const Index = React.memo((props: MnemonicProps) => {
+
+  // TODO: Toggle color of button content blue/gray
   
 
-  console.table(props?.mnemonicPhrase)
+  console.table(props?.mnemonicPhrase);
   return (
     <div className='wrap-mnemonic__guess'>
       {props?.mnemonicPhrase?.map((word, index) => (
@@ -27,16 +30,18 @@ const Index = (props: MnemonicProps) => {
             key={index}
           >
             <button
-              className='btn-guess__content'
-              onClick={props.handleClick}
-              disabled={props.readOnly}
+              id={index.toString()}
+              className={(props.isThisWordSelected === word) ? 'btn-guess__content --selected' : 'btn-guess__content'}
+              onClick={props.handleWordClick}
+              type="button"
             >{word}</button>
         </div>
       ))}
     </div>
   )
-}
+})
 
 export default Index
+
 
 
